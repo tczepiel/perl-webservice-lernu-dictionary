@@ -1,6 +1,8 @@
 package Webservice::Lernu::Dictionary;
 use utf8;
 
+our $VERSION = "0.01";
+
 use strict;
 use warnings;
 use URI;

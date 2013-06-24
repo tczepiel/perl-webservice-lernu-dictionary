@@ -1,6 +1,5 @@
 Revision history for Perl extension Webservice::Lernu::Dictionary.
 
 0.01  Sat Jun 22 00:22:16 2013
-	- original version; created by h2xs 1.23 with options
-		-X Webservice::Lernu::Dictionary
+	- original version
 
