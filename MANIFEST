@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Webservice-Lernu-Dictionary.t
+lib/Webservice/Lernu/Dictionary.pm
