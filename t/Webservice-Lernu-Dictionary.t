@@ -1,15 +1,23 @@
-# Before `make install' is performed this script should be runnable with
-# `make test'. After `make install' it should work as `perl Webservice-Lernu-Dictionary.t'
+use strict;
+use warnings;
 
-#########################
+use Test::More qw(no_plan);
+use Webservice::Lernu::Dictionary;
+use Data::Dumper;
 
-# change 'tests => 1' to 'tests => last_test_to_print';
+my $api = Webservice::Lernu::Dictionary->new(
+);
 
-use Test::More tests => 1;
-BEGIN { use_ok('Webservice::Lernu::Dictionary') };
+my $r = $api->translate(
+    delingvo => 'eo',
+    allingvo => 'en',
+    modelo   => 'bovino',
+);
 
-#########################
+diag(Dumper($r));
 
-# Insert your test code below, the Test::More module is use()ed here so read
-# its man page ( perldoc Test::More ) for help writing this test script.
+ok(ref($r));
+
+pass 'kewl';
+
 
